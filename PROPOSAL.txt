@@ -1,0 +1,28 @@
+PROBLEM DEFINITION
+Describe the problem/application:
+
+Final Fantasy Tactics Advance Remade using the Light-Weight Java Game Library (LWJGL), which is comprised of bindings for Open Graphics Library (OpenGL, low-level graphics API), OpenGL FrameWork (handles windowing and input), and Open Graphics Shading Language (language used to write shaders). The game logic will be completely separate from the graphics in order to avoid unneeded complexity (Model-View-Controller structure).
+
+
+Checklist/Specifications 
+(Point form) please include programming structure it may be implemented in example [loop]
+
+-	Graphics done with the Light-Weight Java Game Library (will be refreshed in the game loop)
+-	Classes to encapsulate individual character attributes (classes, variables, 1D arrays)
+-	Game loop and polling input (loop, callbacks, if statements)
+-	Save files (file I/O)
+-	Multi-threading to handle graphics and game logic separately (multi-threading)
+-	Isometric display (2D/3D arrays)
+-	Shaders written in Open Graphics Shading Language (new language)
+-	Customization interfaces done in Swing/AWT (Java graphics)
+
+Brief Description of Interface (sketch of the program may help):
+
+ 
+
+The playing field pictured above is an isometric display. The camera is positioned around 45 degrees above the playing field 
+to give the player enough of a view over the map. The map itself will be 3D and tile-based. The sprites are in 2D, but the 
+shadows underneath them are separate from the sprite. Rendering the map will take loops, if statements, variables, graphics 
+written in OpenGL and GLSL, 2D and 3D arrays, and File I/O (if the character wants to enter his own sprite). The information 
+screen on the bottom-left hand of the screen will be in 2D (the sprite will be done in 2D in my game), which will take classes
+and variables to write.
