@@ -1,0 +1,92 @@
+
+public class Main 
+{
+	Healer healer = new Healer();
+	Warrior warrior = new Warrior();
+	
+	public static void main(String[] args)
+	{
+		
+		int hey = healer.getMeleeAttack(2);
+	}
+	
+	public int determineTargetHealth(int ID)
+	{
+		
+		switch (ID)
+		{
+		case 1: return healer.getHealth();
+		case 2: return healer.getHealth();
+		}
+		
+		return -1;
+	}
+
+}
+
+
+public class Healer 
+{
+	int  ID = 1;
+	
+	int health = 100;
+	int meleeAttack = 15;
+	int rangeAttack = 5;
+	int healAction = 20;
+	
+	public Healer()
+	{
+		//TODO
+	}
+	
+	public int getHealth()
+	{
+		return health;
+	}
+	
+	public int getMeleeAttack()
+	{
+		return meleeAttack;
+	}
+	
+	public int getRangeAttack()
+	{
+		return rangeAttack;
+	}
+	
+	public int gethealAction()
+	{
+		return healAction;
+	}
+	
+	public void doMeleeAttack(int ID)
+	{
+		int targetHealth = new Main().determineTargetHealth(ID);
+	}
+	
+}
+
+
+public class Warrior
+{
+		int  ID = 2;
+	
+		int health = 100;
+		int meleeAttack = 30;
+		int rangeAttack = 10;
+		
+		public Warrior()
+		{
+			//TODO
+		}
+		
+		public int getMeleeAttack()
+		{
+			return meleeAttack;
+		}
+		
+		public int getRangeAttack()
+		{
+			return meleeAttack;
+		}
+}
